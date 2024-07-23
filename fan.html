@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Music game</title>
+    <link rel="stylesheet" href="fan.css">
+</head>
+<body>
+    <header>
+       <div class="user-info">
+            <img id="user-avatar" src="default-avatar.png" alt="User Avatar">
+            <span id="user-name">User Name</span>
+        </div>
+    </header>
+    <div class="container" id="apli01">
+        <table>
+            <tr>
+                <td><img src="img/n1.png" alt="Diom Icon"><span id="ms2-counter">0</span></td>
+                <td><img src="img/n5.png" alt="Coin Icon"><span id="ms1-counter">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container" id="apli02">
+        <div id="bol">
+            <div class="top-section"></div>
+        </div>
+        <div id="klip">
+            <div class="outer-frame">
+                <div class="inner-frame">
+                    <div class="section">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar fill1"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill2"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill3"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill4"><div class="progress-bar-fill"></div></div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div id="hrap">1</div>
+                    </div>
+                    <div class="section">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar fill1"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill2"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill3"><div class="progress-bar-fill"></div></div>
+                            <div class="progress-bar fill4"><div class="progress-bar-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fan" ontouchstart="handleFanTouch(event)" onclick="handleFanClick(event)"></div>
+                <div id="took">
+                    <div id="plus-button" onclick="createLevelUpObject()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="apli03">
+        <a href="fan.html"><div class="button" style="background-image: url('img/j02.png');"></div></a>
+        <a href="fan2.html"><div class="button" style="background-image: url('img/j06.png');"></div></a>
+        <a href="index.html"><div class="button" style="background-image: url('img/j04.png');"></div></a>
+        
+    </div>
+    <footer></footer>
+    <script src="fan.js"></script>
+</body>
+</html>

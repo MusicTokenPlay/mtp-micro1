@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Music game 2</title>
+    <link rel="stylesheet" href="fan2.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img id="user-avatar" src="default-avatar.png" alt="User Avatar">
+            <span id="user-name">User Name</span>
+        </div>
+    </header>
+    <div class="container" id="apli01">
+        <table>
+            <tr>
+                <td><img src="img/n1.png" alt="Diom Icon"><span id="ms2-counter">0</span></td>
+                <td><img src="img/n5.png" alt="Coin Icon"><span id="ms1-counter">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container" id="apli02">
+        <div class="top-container">
+            <div class="section" data-content="disk"><img src="img/vt01.png" alt="disk"></div>
+            <div class="section" data-content="flip"><img src="img/vt02.png" alt="flip"></div>
+            <div class="section" data-content="piano"><img src="img/vt03.png" alt="piano"></div>
+        </div>
+        <div class="menu-button2" onclick="showPromoCodeInput()"></div>
+        <div id="promoCodeContainer" style="display: none;">
+            <input type="text" id="promoCodeInput" placeholder="Promo code">
+            <button class="apply-button" onclick="applyPromoCode()"></button>
+        </div>
+    </div>
+    <div class="dynamic-container">
+        <div class="slideshow">
+            <img src="img/vs1.png" alt="Image 1">
+            <img src="img/vs2.png" alt="Image 2">
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div id="modal-text"></div>
+        </div>
+    </div>
+    <div class="container" id="apli03">
+        <a href="fan.html"><div class="button" style="background-image: url('img/j02.png');"></div></a>
+        <a href="fan2.html"><div class="button" style="background-image: url('img/j06.png');"></div></a>
+        <a href="index.html"><div class="button" style="background-image: url('img/j04.png');"></div></a>
+    </div>
+    <footer></footer>
+    <div class="eraser" id="eraser"></div>
+    <script>
+        function showPromoCodeInput() {
+            var promoCodeContainer = document.getElementById('promoCodeContainer');
+            promoCodeContainer.style.display = promoCodeContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function applyPromoCode() {
+            var promoCode = document.getElementById('promoCodeInput').value;
+            alert("Promo code applied: " + promoCode);
+        }
+    </script>
+    <script src="content2.js"></script>
+    <script src="fan3.js"></script>
+    <script src="fan2.js"></script>
+</body>
+</html>
